@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="contFormulario" >
+        <h1>Contacto de Seguros</h1>
+        <form id="formularioSeguro">
+            <input type="text" id="nombre" placeholder="Nombre" required> <br>
+            <input type="text" id="apellido" placeholder="Apellido" required> <br>
+            <input type="text" id="dni" placeholder="Documento" required> <br>
+            <input type="email" id="email" placeholder="Correo electronico" required> <br>
+            <input type="tel" id="telefono" placeholder="Telefono" required> <br>
+            <select id="tipoSeguro" onchange="mostrarPrecio()">
+                <option disabled selected value="">Selecciona una opción</option>
+                <option value="basico">Basico $500</option>
+                <option value="intermedio">Intermedio $1000</option>
+                <option value="premium">Premium $1500</option>
+            </select>
+
+            <div id="precio"></div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>
